@@ -30,6 +30,11 @@ ol {
   padding: 0;
 }
 
+/* * a link resets */
+a {
+  text-decoration: none;
+}
+
 /* * utitlity class */
 
 .container {
@@ -45,6 +50,7 @@ ol {
 /* * navigation */
 .primary-navigation {
   padding: calc(var(--gap-400) * var(--golden-scale)) 0;
+  box-shadow: 2px 2px 6.18px #33333361;
 }
 @media screen and (min-width: 40em) {
   .primary-navigation__menu {
@@ -55,6 +61,11 @@ ol {
 ul.primary-navigation__menu :first-child {
   /* padding-right: 20em; */
   flex: 1;
+}
+
+a.logo {
+  color: #333;
+  font-weight: 600;
 }
 
 /* ** golden ratio */
