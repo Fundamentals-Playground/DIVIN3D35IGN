@@ -1,0 +1,25 @@
+:root {
+  --golden-scale: 1.6180339887498948482;
+  --gr-400: calc(var(--hierarchy) / var(--golden-scale));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  border: 1px solid hsla(0, 100%, 50%, 0.38);
+}
+
+/* * utitlity class */
+
+.container {
+  padding: 0 1.5em;
+  max-width: 65em;
+}
