@@ -3,6 +3,7 @@
   --gr-400: calc(var(--hierarchy) / var(--golden-scale));
   --gap-400: 16px;
   --section-spacer: calc(var(--golden-scale) * 5vw);
+  --ff-sans-normal: "Lato", Helvetica, Verdana, Arial, sans-serif;
 }
 
 html {
@@ -14,6 +15,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
+  font-family: var(--ff-sans-normal);
 }
 
 /* // */
@@ -55,16 +57,19 @@ a {
 h1,
 .--fs-h1 {
   font-size: 2.0582rem;
+  font-weight: 900;
 }
 
 h2,
 .--fs-h2 {
   font-size: 1.618rem;
+  font-weight: 700;
 }
 
 h3,
 .--fs-h3 {
   font-size: 1.272rem;
+  font-weight: 700;
 }
 
 p,
