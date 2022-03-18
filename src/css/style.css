@@ -3,7 +3,8 @@
   --gr-400: calc(var(--hierarchy) / var(--golden-scale));
   --gap-400: 16px;
   --section-spacer: calc(var(--golden-scale) * 5vw);
-  --ff-sans-normal: "Lato", Helvetica, Verdana, Arial, sans-serif;
+  --ff-sans-normal: "Nunito", "Lato", Helvetica, Verdana, Arial, sans-serif;
+  --ff-sans-bold: "Montserrat", "Lato", Helvetica, Verdana, Arial, sans-serif;
 }
 
 html {
@@ -16,8 +17,49 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: var(--ff-sans-normal);
+  font-weight: 381;
 }
 
+/* * * * */
+/* * typography - golden ditonic scale* */
+/* * ref: https://spencermortensen.com/articles/typographic-scale/ * */
+h1,
+h2,
+h3,
+.fs-h1,
+.fs-h2,
+.--fs-h3 {
+  font-family: var(--ff-sans-bold);
+}
+h1,
+.--fs-h1 {
+  font-size: 2.0582rem;
+  font-weight: 787;
+}
+
+h2,
+.--fs-h2 {
+  font-size: 1.618rem;
+  font-weight: 619;
+}
+
+h3,
+.--fs-h3 {
+  font-size: 1.272rem;
+  font-weight: 619;
+}
+
+p,
+.--fs-p {
+  font-size: 1rem;
+  font-weight: 381;
+}
+
+footer,
+.--fs-footer {
+  font-size: 0.7862rem;
+  font-weight: 298;
+}
 /* // */
 /* ! resets */
 /* // */
@@ -48,38 +90,6 @@ a {
 
 .section-spacer {
   margin-top: var(--section-spacer);
-}
-
-/* * * * */
-/* * typography - golden ditonic scale* */
-/* * ref: https://spencermortensen.com/articles/typographic-scale/ * */
-
-h1,
-.--fs-h1 {
-  font-size: 2.0582rem;
-  font-weight: 900;
-}
-
-h2,
-.--fs-h2 {
-  font-size: 1.618rem;
-  font-weight: 700;
-}
-
-h3,
-.--fs-h3 {
-  font-size: 1.272rem;
-  font-weight: 700;
-}
-
-p,
-.--fs-p {
-  font-size: 1rem;
-}
-
-footer,
-.--fs-footer {
-  font-size: 0.7862rem;
 }
 
 /* * navigation */
@@ -139,3 +149,9 @@ a.logo {
 }
 
 /* todo 618x618 382x618 rectangles */
+
+
+.section-1 {
+  background-image: url(https://cdn.mos.cms.futurecdn.net/fBDDfnojKNjUycTegbeswJ-970-80.jpg.webp);
+  /* opacity: 1; */
+}
